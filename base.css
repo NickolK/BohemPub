@@ -1,0 +1,136 @@
+:root {
+    --beer-gold: #e3cfa4;
+    --bg-dark: #0b0806;
+    --text-main: #ffffff;
+    --text-soft: rgba(255, 255, 255, 0.85);
+    --radius-lg: 20px;
+
+    --layout-max-width: 80rem;                 /* ~1280px */
+    --layout-inline-padding: clamp(1rem, 4vw, 3rem);
+    --section-padding-block: clamp(1.5rem, 4vw, 3.5rem);
+    --font-base: clamp(14px, 1.05vw, 16px);
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    height: auto;
+    overflow-y: auto;
+    font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: var(--font-base);
+    color: var(--text-main);
+    background-color: var(--bg-dark);
+}
+
+/* ===== Top bar – spoločný header ===== */
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: #191919;
+    border-bottom: 1px solid #191919;
+}
+
+.topbar-inner {
+    width: 1025px;
+    margin-left: 90px;
+    padding-block: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img {
+    height: clamp(40px, 5vh, 55px);
+    width: auto;
+}
+
+.main-nav a {
+    margin-left: 26px;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.main-nav a.active {
+    color: #c8a26a;
+    font-weight: 600;
+}
+
+/* ===== Footer – spoločný ===== */
+
+.site-footer {
+    background: #000000;
+    color: #b3b3b3;
+    text-align: center;
+    padding: 30px 20px 20px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    margin-bottom: 16px;
+}
+
+.footer-nav a {
+    color: #e5e5e5;
+}
+
+.footer-nav a:hover {
+    color: #c8a26a;
+}
+
+.footer-text p {
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.footer-logos {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-logos img {
+    height: 26px;
+    width: auto;
+}
+
+/* ===== Header responsívny ===== */
+
+@media (max-width: 900px) {
+    .topbar-inner {
+        padding: 10px 16px;
+        flex-direction: column;
+        gap: 8px;
+        margin-left: 0px;
+    }
+
+    .main-nav {
+        gap: 20px;
+        font-size: 13px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-nav {
+        display: none; /* ak chceš, pridaj burger menu */
+    }
+}

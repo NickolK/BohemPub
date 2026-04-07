@@ -1,0 +1,76 @@
+:root {
+    --beer-gold: #e3cfa4;
+    --bg-dark: #0b0806;
+    --text-main: #ffffff;
+    --text-soft: rgba(255, 255, 255, 0.88);
+    --radius-lg: 20px;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-dark);
+}
+
+/* ===== Pozadie ===== */
+
+.menu-page {
+    min-height: 100vh;
+    padding: 40px 16px 80px;
+    background-image: url("img/BANNER_16-9 (1).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ===== Glass box – denné menu ===== */
+
+/* ===== Tabs ===== */
+
+.menu-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto 24px;
+    padding: 6px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(12px);
+}
+
+.menu-tab {
+    flex: 0 0 auto;
+    min-width: 220px;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    border: 1px solid rgba(227, 207, 164, 0.4);
+    background: rgba(10, 10, 10, 0.85);
+    color: rgba(242, 242, 242, 0.85);
+}
+
+.menu-tab.active {
+    background: linear-gradient(135deg, var(--beer-gold), #b48944);
+    color: #24160a;
+    border-color: transparent;
+}
+
+
+

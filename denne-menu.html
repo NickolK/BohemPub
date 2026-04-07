@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <title>Denné menu – Bohem Pub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS len pre denné menu -->
+  <link rel="stylesheet" href="base.css"/>
+  <link rel="stylesheet" href="menu.css"/>
+
+  <!-- spoločný script s DAILY_MENU a renderDailyMenu() -->
+  <script src="denne-menu-data.js" defer></script>
+  <script src="header.js" defer></script>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main class="menu-page">
+  <section class="menu-wrapper-daily menu-wrapper-narrow">
+    <!-- Tabs hore, aby to ladilo s jedálnym lístkom -->
+    <div class="menu-tabs">
+      <a href="ponuka.html" class="menu-tab">Jedálny lístok</a>
+      <a href="napojovy-listok.html" class="menu-tab">Nápojový lístok</a>
+      <a href="denne-menu.html" class="menu-tab active">Denné menu</a>
+    </div>
+
+    <div class="daily-info">
+      Denné menu podávame od 11:00 do 14:00 · Cena komplet menu 7,99 € aj s polievkou
+    </div>
+
+    <!-- SEM ti JS doplní 5–7 stĺpcov podľa DAILY_MENU -->
+    <div id="daily-menu-container" class="daily-grid">
+      <!-- renderDailyMenu() vytvorí <section class="daily-day"> pre každý deň -->
+    </div>
+
+    <div class="daily-3menuUP">
+      <br>
+      Menu na celý týždeň
+    </div>
+    <div class="daily-3menuDOWN">
+      3) Kuracie nuggetky, hranolky, tatárska omáčka
+    </div>
+    <div class="daily-3menuDOWN">
+     Pizza Salami
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <nav class="footer-nav">
+    <a href="index.html">Domov</a>
+    <a href="ponuka.html">Naša ponuka</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+
+</footer>
+
+</body>
+</html>

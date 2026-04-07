@@ -1,0 +1,385 @@
+/* ===== Stránka + pozadie ===== */
+
+.menu-page {
+    min-height: 100vh;
+    padding: 3rem 0 2.5rem;
+    background-color: #000;
+    background-image: url("img/YOU SUCCKE DICKO YES 4.jpeg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/* ===== Glass menu box ===== */
+
+.menu-wrapper {
+    width: min(100% - 2rem, var(--layout-max-width));
+    margin: 0 auto 2rem;
+    padding: 1.5rem 1.25rem 1.75rem;
+    background: rgba(20, 15, 10, 0.50);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(227, 207, 164, 0.4);
+}
+
+.menu-wrapper.drink-wrapper {
+    position: relative;
+    margin: 0 auto 2.5rem;
+    width: min(calc(100% - 2rem), 101rem);
+    padding: 1.75rem 1.5rem 2rem;
+    background: rgba(20, 15, 10, 0.55);
+    border-radius: 20px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(227, 207, 164, 0.4);
+    z-index: 1;
+}
+
+
+.menu-wrapper-daily.menu-wrapper-narrow {
+    max-width: 1890px;
+    margin: 90px auto 40px;
+    padding: 32px 50px 40px;
+
+    background: rgba(20, 15, 10, 0.50);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(227, 207, 164, 0.4);
+}
+
+.menu-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto 24px;
+    padding: 6px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(12px);
+}
+
+.menu-tab {
+    flex: 0 0 auto;
+    min-width: 220px;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    border: 1px solid rgba(227, 207, 164, 0.4);
+    background: rgba(10, 10, 10, 0.85);
+    color: rgba(242, 242, 242, 0.85);
+}
+
+
+.menu-tab.active {
+    background: linear-gradient(135deg, var(--beer-gold), #b48944);
+    color: #24160a;
+    border-color: transparent;
+}
+
+/* ===== Columns + items ===== */
+
+.menu-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.menu-columns.menu-columns-4 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.menu-column h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    text-align: center;
+    color: var(--beer-gold);
+    margin: 0 0 6px;
+}
+
+.menu-column hr {
+    border: none;
+    border-top: 1px solid rgba(227, 207, 164, 0.55);
+    margin: 0 0 18px;
+}
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: clamp(0.75rem, 2vw, 1.5rem);
+    padding: 8px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-soft);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.menu-item > div {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item strong {
+    display: block;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 2px;
+}
+
+.menu-item > div span {
+    display: block;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.menu-item .price {
+    white-space: nowrap;
+    margin-left: 12px;
+    font-weight: 600;
+    color: var(--beer-gold);
+    font-size: 13px;
+    flex-shrink: 0;
+}
+/* ===== Responsivita – menu ===== */
+
+@media (min-width: 600px) {
+    .menu-page {
+        padding: 3.5rem 0 3rem;
+    }
+
+    .menu-wrapper,
+    .menu-wrapper.drink-wrapper {
+        margin: 0 auto 3rem;
+        padding: 2rem 1.75rem 2.25rem;
+    }
+
+    .menu-tab {
+        flex: 0 1 auto;
+        min-width: 150px;
+    }
+
+    .main-nav a {
+        margin-left: 20px;
+        font-size: 13px;
+    }
+}
+
+
+/* ===== Info text ===== */
+.daily-info {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+}
+
+/* ===== GRID dní (5 stĺpcov) ===== */
+
+.daily-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr)); /* Po–Pi */
+    gap: 32px;
+    font-size: 14px; /* väčšie základné písmo */
+}
+
+/* jeden deň */
+
+.daily-day h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;              /* zväčšené */
+    text-transform: uppercase;
+    letter-spacing: 0.20em;
+    text-align: center;
+    color: var(--beer-gold);
+    margin: 0 0 6px;
+}
+
+
+
+.daily-3menuUP {
+    font-size: 20px;
+    color: var(--beer-gold);
+    margin-bottom: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: bold;
+}
+
+.daily-3menuDOWN {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: bold;
+}
+.daily-day hr {
+    border: none;
+    border-top: 1px solid rgba(227, 207, 164, 0.55);
+    margin: 0 0 8px;
+}
+
+.daily-soup {
+    font-weight: 600;
+    font-size: 16px;              /* zväčšené */
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* zoznam jedál */
+
+.daily-meals {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.daily-meals li {
+    padding: 4px 0;
+    line-height: 1.5;
+    color: var(--text-soft);
+    font-size: 16px;              /* bolo 12px */
+}
+
+.daily-meals li + li {
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* pripravené na prípadné rozdelenie jedlo/cena */
+.daily-meals li span:first-child {
+    flex: 1 1 auto;
+}
+
+.daily-meals li span:last-child {
+    white-space: nowrap;
+}
+
+/* ===== Footer ===== */
+
+.site-footer {
+    background: #000000;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 20px 16px 30px;
+    text-align: center;
+}
+
+.footer-nav {
+    margin-bottom: 8px;
+}
+
+.footer-nav a {
+    margin: 0 10px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+    .menu-wrapper,
+    .menu-wrapper.drink-wrapper {
+        padding: 2.5rem 3rem 2.75rem;
+    }
+
+    .main-nav a {
+        margin-left: 26px;
+        font-size: 14px;
+    }
+}
+/* === MOBILE HEADER, FORCE VISIBLE NAV === */
+@media (max-width: 768px) {
+    .topbar-inner {
+        width: 100%;
+        padding: 8px 12px;
+        display: flex;
+        flex-direction: column;   /* logo hore, nav pod ním */
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .logo-img {
+        height: 36px;
+    }
+
+    .main-nav {
+        display: flex !important;     /* istota, že nie je display:none */
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .main-nav a {
+        margin: 0 !important;        /* zruší pôvodný margin-left */
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+}
+
+
+/* ===== Responsivita ===== */
+
+@media (max-width: 1200px) {
+    .menu-wrapper-daily.menu-wrapper-narrow {
+        max-width: 1100px;
+        padding: 28px 34px 34px;
+    }
+
+    .daily-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 dni v riadku */
+        gap: 24px;
+    }
+}
+
+@media (max-width: 900px) {
+    .menu-page {
+        padding: 24px 10px 40px;
+    }
+
+    .menu-wrapper-daily.menu-wrapper-narrow {
+        margin: 80px auto 32px;
+        padding: 24px 20px 26px;
+    }
+
+    .daily-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 dni v riadku */
+        gap: 20px;
+    }
+
+    .daily-meals li {
+        font-size: 12px;  /* na mobile stále väčšie ako predtým */
+    }
+}
+
+@media (max-width: 600px) {
+    .daily-grid {
+        grid-template-columns: 1fr;       /* 1 deň pod sebou */
+    }
+
+    .menu-wrapper-daily.menu-wrapper-narrow {
+        margin: 70px auto 28px;
+        padding: 20px 16px 24px;
+    }
+}

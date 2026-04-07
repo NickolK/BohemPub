@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontakt – Názov Pubu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="kontakt.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="kontakt.css">
+  <script src="header.js" defer></script>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main class="contact-page">
+
+  <section class="contact-wrapper">
+    <div class="contact-columns">
+      <!-- ĽAVÁ STRANA – Kde nás nájdete -->
+      <div class="contact-left">
+        <h1 class="contact-title">Kde nás nájdete?</h1>
+
+        <p class="contact-phone">
+          Kontakt na prevadzku <strong>+421 910 662 662</strong>
+          <br>
+          Kontakt na súkromne akcie <strong>+421 902 810 833</strong>
+
+
+        </p>
+
+        <p class="contact-address">
+          Bohem Pub<br>
+          Gallayova 1, Bratislava <br>
+          Dúbravka 841 02
+        </p>
+      </div>
+
+      <!-- PRAVÁ STRANA – formulár -->
+      <div class="contact-right">
+        <h2 class="contact-form-title">Máte otázku?</h2>
+        <p class="contact-form-text">
+          Ak ste nenašli potrebné informácie, napíšte nám cez formulár.
+        </p>
+
+        <p id="form-status" class="contact-form-status"></p>
+
+        <form class="contact-form"
+              action="https://formspree.io/f/xreyzqzv"
+              method="post">
+          <label>
+            Váš e‑mail
+            <input type="email" name="email" required>
+          </label>
+
+          <label>
+            Predmet
+            <input type="text" name="subject" required>
+          </label>
+
+          <label>
+            Vaša správa
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+
+          <input type="hidden" name="page" value="Kontakt – web reštaurácie">
+
+          <button type="submit" class="btn-outline">Odoslať</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- spodná mapa -->
+  <section class="contact-map">
+    <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1329.87351924254!2d17.031557!3d48.1922252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8d1010fb2ac9%3A0x34053d2b7296108!2sBohem%20Pub!5e0!3m2!1sen!2ssk!4v1772705783031!5m2!1sen!2ssk"
+            width="100%"
+            height="260"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <nav class="footer-nav">
+    <a href="index.html">Domov</a>
+    <a href="ponuka.html">Naša ponuka</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+  <div class="footer-text">
+  </div>
+</footer>
+
+</body>
+</html>

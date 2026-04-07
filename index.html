@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <title>Naša ponuka – Názov Pubu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="header.js" defer></script>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<!-- HERO – veľká fotka -->
+<section class="hero-full">
+  <img src="img/DSC02348%20copy.jpeg" alt="Čapovanie piva" class="hero-bg-img">
+</section>
+
+<!-- BIELA SEKCIA: nadpis + galéria vľavo, text vpravo -->
+<section class="section-white">
+  <div class="content-narrow">
+    <h1>ZAŽITE ATMOSFÉRU PIVNÉHO KRAJA V NAŠOM NOVOM PODNIKU</h1>
+    <p class="intro-text">
+      Curabitur pulvinar mollis luctus. Fusce augue odio, facilisis vitae volutpat pellentesque, vehicula nec massa.
+      Sed in malesuada metus. Aenean elementum dui quis urna sagittis, vitae finibus dolor molestie. Phasellus vel
+      tristique est. In ut mollis lorem. Aenean quis aliquam metus. Nulla imperdiet libero ac orci suscipit accumsan.
+    </p>
+  </div>
+
+  <div class="about-split">
+    <!-- ĽAVO: auto-galéria -->
+    <div class="about-gallery">
+      <div class="about-gallery-frame">
+        <img id="auto-gallery-image" src="img/Interiér%201'.jpg" alt="Interiér podniku">
+        <div class="gallery-badge">Galéria podniku</div>
+      </div>
+    </div>
+
+    <!-- PRAVO: popis podniku -->
+    <div class="about-content">
+      <span class="section-label">O podniku</span>
+      <h2>Miesto, kde sa stretáva kvalitné pivo, štýlový interiér a príjemná atmosféra</h2>
+      <p>
+        Naše pivné mestečko je priestor vytvorený pre všetkých, ktorí si chcú vychutnať dobre načapované pivo,
+        pohodové prostredie a príjemné stretnutia s priateľmi. Spájame moderný vzhľad interiéru s atmosférou,
+        do ktorej sa hostia radi vracajú.
+      </p>
+      <p>
+        Či sa zastavíte na krátke posedenie, večerný program alebo menšiu oslavu, u nás nájdete kombináciu
+        kvalitnej ponuky, pohodlia a autentického zážitku. Každý detail priestoru je navrhnutý tak, aby ste sa cítili dobre.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="events-section">
+  <div class="events-inner">
+    <div class="events-heading">
+      <span class="section-label">Eventy</span>
+      <h2>Naše plagáty</h2>
+    </div>
+
+    <div class="events-grid">
+      <img src="img/event1.png" alt="Plagát eventu 1">
+      <img src="img/event2.png" alt="Plagát eventu 2">
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <nav class="footer-nav">
+    <a href="index.html">Domov</a>
+    <a href="ponuka.html">Naša ponuka</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+
+  <div class="footer-text">
+
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/bohempub_dubravka/" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+        <img src="img/instagram-logo.png" alt="Instagram" class="footer-social-img">
+        <span>Instagram</span>
+      </a>
+
+      <a href="https://wolt.com/sk/svk/bratislava/restaurant/mestecko?utm_source=ig&utm_medium=social&utm_con
+      tent=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnXc9lOd56FcQNBd-Ut5re157vKdbROdyz8Hp1-C-YB4cDFP29iFg0-Axix38_aem_
+      i3zYSPDHIMHZqs9UCPv9Ig" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+        <img src="img/wolt-logo.jpeg" alt="Wolt" class="footer-social-img">
+        <span>Wolt</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-logos">
+
+  </div>
+</footer>
+
+<!-- Jednoduchý JS na automatickú galériu -->
+<script>
+  const galleryImages = [
+    "img/DSC02405.jpg",
+    "img/DSC02353.jpg",
+    "img/DSC02370.jpg",
+    "img/DSC02372.jpg",
+    "img/DSC02414.jpg",
+  ];
+
+  const galleryAlts = [
+    "Interiér podniku 1",
+    "Interiér podniku 2",
+    "Interiér podniku 3",
+    "Interiér podniku 4",
+    "Interiér podniku 5"
+  ];
+
+  const galleryImageEl = document.getElementById("auto-gallery-image");
+  let currentGalleryIndex = 0;
+
+  function showNextGalleryImage() {
+    currentGalleryIndex = (currentGalleryIndex + 1) % galleryImages.length;
+    galleryImageEl.style.opacity = 0;
+
+    setTimeout(() => {
+      galleryImageEl.src = galleryImages[currentGalleryIndex];
+      galleryImageEl.alt = galleryAlts[currentGalleryIndex];
+      galleryImageEl.style.opacity = 1;
+    }, 220);
+  }
+
+  setInterval(showNextGalleryImage, 3500);
+</script>
+
+</body>
+</html>
