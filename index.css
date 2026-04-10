@@ -224,9 +224,6 @@
 .center-box .btn-outline {
     border-color: #0b4406;
 }
-
-/* ===== EVENTY (plagáty) ===== */
-
 .events-section {
     background: #f7f3ed;
     padding: 70px 0 80px;
@@ -255,6 +252,12 @@
     gap: 24px;
 }
 
+/* karta jedného eventu */
+.event-card {
+    display: flex;
+    flex-direction: column;
+}
+
 .events-grid img {
     width: 100%;
     height: 600px;
@@ -262,6 +265,14 @@
     display: block;
     border-radius: 14px;
     box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+/* dátum pod plagátom */
+.event-date {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
 }
 
 @media (max-width: 900px) {
