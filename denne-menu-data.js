@@ -3,41 +3,42 @@
 const DAILY_MENU = [
     {
         day: "Pondelok",
-        soup: "",
+        soup: "Slepačí vývar",
         meals: [
-            "Otvárame o 11:00",
+            "1 Segedínsky guláš, parená knedľa",
+            "2 Kuracie stripsy, hranolki, tatárska omáčka",
         ]
     },
     {
         day: "Utorok",
-        soup: "Fazuľová polievka",
+        soup: "Hrachová polievka s párkom",
         meals: [
-            "1 Segedínsky guláš, parená knedľa",
-            "2 Kurací steak zapečené s broskyňou a syrom, hranolky",
+            "1 Marínovaná krkovička, zemiaková kaša, uhorka",
+            "2 Špenátové halušky so šunkou a syrovou omáčkou",
         ]
     },
     {
         day: "Streda",
-        soup: "Brokolicová krémová polievka ",
+        soup: "Zeleninová krémová polievka",
         meals: [
-            "1 Špagety Carbonara",
-            "2 Vyprážaný bravčový rezeň, opekané zemiaky, tatárska omáčka ",
+            "1 Bravčový guláš na smotane, cestovina",
+            "2 Bravčová panenka na hráškovom pyré ",
         ],
     },
     {
         day: "Štvrtok",
-        soup: "Kelová polievka s vajcom",
+        soup: "Kapustnica",
         meals: [
-            "1 Čínske kuracie prsia, ryža",
-            "2 Gordon blue s hranolkami",
+            "1 Kuracie prsia zapečené šunkou a syrom, hranolky",
+            "2 Bryndzové halušky so slaninkou",
         ]
     },
     {
         day: "Piatok",
-        soup: "Slepačí vývar",
+        soup: "Fazuľová polievka",
         meals: [
-            "1 Zapečené prsia so slaninkou a syrom, tlačené zemiaky, prírodná omáčka ",
-            "2 Gordon blue s hranolkami",
+            "1 Grilovaná bravčová panenka, prírodná omáčka, ryža",
+            "2 Hubové krémové rizoto s kuracím mäsom",
         ]
     }
 ];
