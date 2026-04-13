@@ -3,10 +3,10 @@
 const DAILY_MENU = [
     {
         day: "Pondelok",
-        soup: "Slepačí vývar ",
+        soup: "",
         meals: [
-            "1 Segedínsky guláš, parená knedľa ",
-            "2 Kuracie stripsy, hranolki, tatárska omáčka ",
+            "",
+            "",
         ]
     },
     {
