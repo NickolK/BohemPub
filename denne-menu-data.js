@@ -5,40 +5,38 @@ const DAILY_MENU = [
         day: "Pondelok",
         soup: "Slepačí vývar ",
         meals: [
-            "1 Segedínsky guláš, parená knedľa ",
-            "2 Kuracie stripsy, hranolki, tatárska omáčka ",
+            "1 Bravčový rezeň, majonézový šalát",
         ]
     },
     {
         day: "Utorok",
-        soup: "Hrachová polievka s párkom",
+        soup: "Zeleninová krémová polievka",
         meals: [
-            "1 Marínovaná krkovička, zemiaková kaša, uhorka",
-            "2 Špenátové halušky so šunkou a syrovou omáčkou",
+            "1 Vyprážane kuracia prsia plnené nivou, ryža",
+
         ]
     },
     {
         day: "Streda",
-        soup: "Zeleninová krémová polievka",
+        soup: "Kapustová polievka",
         meals: [
-            "1 Bravčový guláš na smotane, cestovina",
-            "2 Bravčová panenka na hráškovom pyré ",
+            "1 Sviečková na smotane , kurací plátok , parená knedľa",
+
         ],
     },
     {
         day: "Štvrtok",
-        soup: "Kapustnica",
+        soup: "Brokolicová polievka",
         meals: [
-            "1 Kuracie prsia zapečené šunkou a syrom, hranolky",
-            "2 Bryndzové halušky so slaninkou",
+            "1 Pečený bôčik , zemiaková kaša",
+
         ]
     },
     {
         day: "Piatok",
-        soup: "Fazuľová polievka",
+        soup: "Kulajda",
         meals: [
-            "1 Grilovaná bravčová panenka, prírodná omáčka, ryža",
-            "2 Hubové krémové rizoto s kuracím mäsom",
+            "1 Trhané bravčové s cheddar omáčkou , hranolky",
         ]
     }
 ];
