@@ -3,40 +3,40 @@
 const DAILY_MENU = [
     {
         day: "Pondelok",
-        soup: "Zeleninová polievka",
+        soup: "Karfiolová krémová polievka",
         meals: [
-            "1 Bravčový steak, opekané zemiaky, hríbová omáčka",
+            "1 Grilované kurča, ryža, čalamáda",
         ]
     },
     {
         day: "Utorok",
-        soup: "Hrstková polievka",
+        soup: "Cícerová polievka",
         meals: [
-            "1 Madarský guláš, parená knedľa",
+            "1 Vyprážaný bravčový rezen, majonézový šalát",
 
         ]
     },
     {
         day: "Streda",
-        soup: "Fazulová polievka",
+        soup: "Cesnaková čira polievka so syrom",
         meals: [
-            "1 Kuracie soté na zelenine, ryža",
+            "1 Kurací steak s nivovou omáčkou, ryža, obloha",
 
         ],
     },
     {
         day: "Štvrtok",
-        soup: "Slepačí vývar",
+        soup: "Zeleninový vývar",
         meals: [
-            "1 Pečené kuracie stehno, zemiaková kaša, kyslá úhorka",
+            " 1 Jemne pikantné kuracie soté v zemiakovej placke posypané syrom",
 
         ]
     },
     {
         day: "Piatok",
-        soup: "Kapustnica",
+        soup: "Bryndzová polievka",
         meals: [
-            "1 Bravčové soté na hrášku, ryža",
+            "1 Vyprážaná kuracia kapsa plnená nivou, hranolky",
         ]
     }
 ];
