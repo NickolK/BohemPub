@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventy – Bohem Pub Bratislava</title>
+    <meta name="description" content="Pravidelné eventy, akcie a udalosti v Bohem Pub Bratislava-Dúbravka. Každý víkend niečo nové.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <a class="nav-logo" href="index.html">Bohem</a>
+    <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Domov</a></li>
+        <li><a href="ponuka.html">Naša ponuka</a></li>
+        <li><a href="galeria.html">Galéria</a></li>
+        <li><a href="eventy.html" class="active">Eventy</a></li>
+        <li><a href="recenzie.html">Hodnotenie</a></li>
+        <li><a href="kontakt.html" class="nav-reserve">Kontakt</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero">
+    <span class="section-tag">Čo sa u nás deje</span>
+    <h1 class="section-title">Eventy <em>&amp; akcie</em></h1>
+    <p style="color:var(--muted);max-width:480px;margin:0 auto;font-size:.92rem;line-height:1.75;">
+        Každý víkend niečo nové. Sledujte naše plagáty a Instagram pre aktuálne termíny.
+    </p>
+</div>
+
+<div class="section">
+    <div id="eventGrid"></div>
+</div>
+
+<div class="cta">
+    <h2>Plánujete akciu?</h2>
+    <p>Zavolajte nám a dohodneme všetko potrebné</p>
+    <a id="ctaTel"  class="btn-dark" href="#">📞 +421 902 810 833</a>
+    <a id="ctaIg"   class="btn-dark" href="#" target="_blank">📸 Instagram</a>
+</div>
+
+<footer>
+    <span class="footer-logo">Bohem Pub</span>
+    <ul class="footer-nav">
+        <li><a href="index.html">Domov</a></li>
+        <li><a href="ponuka.html">Ponuka</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <p class="footer-copy">© 2025 Bohem Pub · Gallayova 1, 841 02 Bratislava-Dúbravka</p>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+    document.getElementById('ctaTel').href = 'tel:' + DB.info.telEvents.replace(/\s/g,'');
+    document.getElementById('ctaIg').href  = DB.info.instagram;
+</script>
+</body>
+</html>

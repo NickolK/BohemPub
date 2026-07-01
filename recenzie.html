@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hodnotenie – Bohem Pub Bratislava</title>
+    <meta name="description" content="Napíšte nám recenziu – Bohem Pub Bratislava-Dúbravka.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .review-wrap{
+            max-width:640px;margin:0 auto;padding:120px 2rem 5rem;
+        }
+        .star-row{display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:.3rem;margin-bottom:1.8rem}
+        .star-row input{display:none}
+        .star-row label{font-size:2.2rem;cursor:pointer;color:var(--faint);transition:color .15s}
+        .star-row input:checked ~ label,
+        .star-row label:hover,
+        .star-row label:hover ~ label{color:var(--gold)}
+        .review-meta{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+        @media(max-width:520px){.review-meta{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+
+<nav>
+    <a class="nav-logo" href="index.html">Bohem</a>
+    <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Domov</a></li>
+        <li><a href="ponuka.html">Naša ponuka</a></li>
+        <li><a href="galeria.html">Galéria</a></li>
+        <li><a href="eventy.html">Eventy</a></li>
+        <li><a href="recenzie.html" class="active">Hodnotenie</a></li>
+        <li><a href="kontakt.html" class="nav-reserve">Kontakt</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="review-wrap">
+    <span class="section-tag">Váš názor</span>
+    <h1 class="section-title" style="margin-bottom:.6rem;">Vaše <em>hodnotenie</em></h1>
+    <p style="color:var(--muted);font-size:.88rem;margin-bottom:2.5rem;line-height:1.75;">
+        Ako sa vám u nás páčilo? Vaša spätná väzba nám pomáha rásť.
+    </p>
+
+    <!-- HVIEZDY -->
+    <div class="fgroup" style="margin-bottom:.5rem">
+        <label class="flabel">Hodnotenie</label>
+        <div class="star-row" id="starRow">
+            <input type="radio" name="stars" id="s5" value="5"><label for="s5">★</label>
+            <input type="radio" name="stars" id="s4" value="4"><label for="s4">★</label>
+            <input type="radio" name="stars" id="s3" value="3"><label for="s3">★</label>
+            <input type="radio" name="stars" id="s2" value="2"><label for="s2">★</label>
+            <input type="radio" name="stars" id="s1" value="1"><label for="s1">★</label>
+        </div>
+    </div>
+
+    <!-- MENO + DÁTUM NÁVŠTEVY -->
+    <div class="review-meta">
+        <div class="fgroup">
+            <label class="flabel">Vaše meno</label>
+            <input type="text" class="finput" id="rMeno" placeholder="Ján Novák">
+        </div>
+        <div class="fgroup">
+            <label class="flabel">Dátum návštevy</label>
+            <input type="date" class="finput" id="rDatum">
+        </div>
+    </div>
+
+    <!-- EMAIL (nepovinný) -->
+    <div class="fgroup">
+        <label class="flabel">Váš e-mail <span style="color:var(--muted);font-weight:400;">(nepovinné)</span></label>
+        <input type="email" class="finput" id="rEmail" placeholder="jan.novak@email.com">
+    </div>
+
+    <!-- TEXT RECENZIE -->
+    <div class="fgroup">
+        <label class="flabel">Vaša recenzia</label>
+        <textarea class="ftextarea" id="rText" rows="5" placeholder="Čo sa vám páčilo? Čo by sme mohli zlepšiť?"></textarea>
+    </div>
+
+    <button class="fsubmit" onclick="sendReview()">Odoslať recenziu</button>
+</div>
+
+<footer>
+    <span class="footer-logo">Bohem Pub</span>
+    <ul class="footer-nav">
+        <li><a href="index.html">Domov</a></li>
+        <li><a href="ponuka.html">Ponuka</a></li>
+        <li><a href="galeria.html">Galéria</a></li>
+        <li><a href="eventy.html">Eventy</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <p class="footer-copy">© 2025 Bohem Pub · Gallayova 1, 841 02 Bratislava-Dúbravka</p>
+</footer>
+
+<div class="toast" id="toast">★ Ďakujeme za recenziu!</div>
+
+<script src="js/main.js"></script>
+<script>
+    function sendReview() {
+        const btn = document.querySelector('.fsubmit');
+        const toast = document.getElementById('toast');
+
+        const stars = document.querySelector('input[name="stars"]:checked');
+        const meno  = document.getElementById('rMeno').value.trim();
+        const text  = document.getElementById('rText').value.trim();
+
+        if (!stars) { alert('Prosím vyberte hodnotenie hviezdičkami.'); return; }
+        if (!meno)  { alert('Prosím zadajte vaše meno.'); return; }
+        if (!text)  { alert('Prosím napíšte text recenzie.'); return; }
+
+        const hviezdicky = '★'.repeat(parseInt(stars.value)) + '☆'.repeat(5 - parseInt(stars.value));
+
+        const data = {
+            meno       : meno,
+            hodnotenie : hviezdicky + ' (' + stars.value + '/5)',
+            datum      : document.getElementById('rDatum').value || '—',
+            _replyto   : document.getElementById('rEmail').value || '373nikol@gmail.com',
+            text       : text,
+            _subject   : 'Nové hodnotenie – Bohem Pub'
+        };
+
+        btn.disabled = true;
+        btn.textContent = 'Odosielam...';
+
+        fetch('https://formspree.io/f/xreyzqzv', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(data)
+        })
+            .then(r => r.json())
+            .then(res => {
+                if (res.ok || res.next) {
+                    toast.classList.add('show');
+                    setTimeout(() => toast.classList.remove('show'), 4000);
+                    document.getElementById('rMeno').value  = '';
+                    document.getElementById('rEmail').value = '';
+                    document.getElementById('rDatum').value = '';
+                    document.getElementById('rText').value  = '';
+                    document.querySelectorAll('input[name="stars"]').forEach(i => i.checked = false);
+                } else {
+                    alert('Chyba: ' + JSON.stringify(res.errors));
+                }
+                btn.textContent = 'Odoslať recenziu';
+                btn.disabled = false;
+            })
+            .catch(() => {
+                alert('Chyba pri odosielaní. Skúste nás kontaktovať telefonicky.');
+                btn.textContent = 'Odoslať recenziu';
+                btn.disabled = false;
+            });
+    }
+</script>
+</body>
+</html>
