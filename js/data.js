@@ -312,18 +312,18 @@ const DB = {
     denneMenu: {
         note: "Cena denného menu je 7,99 € s polievkou · Pondelok – Piatok 11:00 – 14:00",
         dni: [
-            { day: "Pondelok", soup: "0,33l Frankfurtská polievka s párkom", meal: "1: Maďarský guláš, knedľa" },
-            { day: "Utorok",   soup: "0,33l Brokolicová krémová polievka", meal: "1: Špagety Carbonara" },
-            { day: "Streda",   soup: "0,33l Slepačí vývar", meal: "1: Francúzske zemiaky" },
-            { day: "Štvrtok",  soup: "0,33l Paradajková polievka so syrom", meal: "1: Kurací Gordon Bleu, hranolky, tatárska omáčka" },
-            { day: "Piatok",   soup: "0,33l Hŕstková polievka", meal: "1: Kurací plátok zapečený s broskyňou a syrom, ryža, demi-glace omáčka" },
+            { day: "Pondelok", soup: "0,33l Cesnaková číra polievka so syrom", meal: "1: Pečená krkovička, zemiaková kaša, uhorka" },
+            { day: "Utorok",   soup: "0,33l Pórová polievka", meal: "1: Paradajková omáčka, mäsové guľky, parená knedľa" },
+            { day: "Streda",   soup: "0,33l Šošovicová polievka", meal: "1: Grilované kuracie stehno, ryža, uhorka" },
+            { day: "Štvrtok",  soup: "0,33l Tekvicová polievka", meal: "1: Wrap s kuracím mäsom, mix šalát, dressing, hranolky" },
+            { day: "Piatok",   soup: "0,33l Kapustová polievka so zemiakmi", meal: "1: Kuracie prsia v cestíčku, opekané zemiaky, dressing" },
         ],
         menuCelyTyzden: [
-            "2: Bravčový rezeň, majonézový šalát",
-            "3: Cézar šalát s kuracím mäsom",
-            "4: Bryndzové halušky so slaninkou",
+            "2: Gordon Bleu, opekané zemiaky",
+            "3: Grécky šalát s feta syrom",
+            "4: Furmanské halušky s klobásou a smotanou",
             "5: Vyprážaný syr, hranolky, tatárska omáčka",
-            "Pizza Corleone (paradajkový základ, mozzarella, šunka, kukurica)"
+            "Pizza Klobásová - Klobása, syr, olivy"
         ]
     },
 
