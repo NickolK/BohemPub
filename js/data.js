@@ -426,11 +426,11 @@ const DB = {
     denneMenu: {
         note: "Cena denného menu je 7,99 € s polievkou · Pondelok – Piatok 11:00 – 14:00",
         dni: [
-            { day: "Pondelok", soup: "0,33l Cesnaková číra polievka so syrom", meal: "1: Pečená krkovička, zemiaková kaša, uhorka" },
-            { day: "Utorok",   soup: "0,33l Pórová polievka", meal: "1: Paradajková omáčka, mäsové guľky, parená knedľa" },
-            { day: "Streda",   soup: "0,33l Šošovicová polievka", meal: "1: Grilované kuracie stehno, ryža, uhorka" },
-            { day: "Štvrtok",  soup: "0,33l Tekvicová polievka", meal: "1: Wrap s kuracím mäsom, mix šalát, dressing, hranolky" },
-            { day: "Piatok",   soup: "0,33l Kapustová polievka so zemiakmi", meal: "1: Kuracie prsia v cestíčku, opekané zemiaky, dressing" },
+            { day: "Pondelok", soup: "0,33l Cesnaková číra polievka so syrom",          meal: "1: Pečená krkovička, zemiaková kaša, uhorka" },
+            { day: "Utorok",   soup: "0,33l Pórová polievka",                           meal: "1: Paradajková omáčka, mäsové guľky, parená knedľa" },
+            { day: "Streda",   soup: "0,33l Šošovicová polievka",                       meal: "1: Grilované kuracie stehno, ryža, uhorka" },
+            { day: "Štvrtok",  soup: "0,33l Tekvicová polievka",                        meal: "1: Wrap s kuracím mäsom, mix šalát, dressing, hranolky" },
+            { day: "Piatok",   soup: "0,33l Kapustová polievka so zemiakmi",            meal: "1: Kuracie prsia v cestíčku, opekané zemiaky, dressing" },
         ],
         menuCelyTyzden: [
             "2: Gordon Bleu, opekané zemiaky",
