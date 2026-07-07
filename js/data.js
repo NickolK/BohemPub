@@ -233,90 +233,193 @@ const DB = {
         capovanePivo: {
             title: "Čapované pivo",
             items: [
-                { name: "Bohém Krušovice Tank 0,5l", price: "2,49 €" },
-                { name: "Bohém Krušovice Tank 0,3l", price: "1,70 €" },
-                { name: "Krušovice 10° 0,4l", price: "1,80 €" },
-                { name: "Bradáč Discovery / sezónne 0,4l", price: "2,70 €" },
-                { name: "Bradáč Ocean Warrior 0,4l", price: "3,20 €" },
-                { name: "Maurus 10° 0,4l", price: "1,90 €" },
-                { name: "Rezané 0,4l", price: "2,49 €" },
-                { name: "Zlatý bažant radler citrón 0,4l", price: "2,00 €" },
+                { name: "Bohém Krušovice Tank",         desc:"0,5l",        price: "2,49 €" },
+                { name: "Bohém Krušovice Tank",         desc:"0,3l",        price: "1,70 €" },
+                { name: "Krušovice 10°",                desc:"0,4l",        price: "1,80 €" },
+                { name: "Bradáč Aloha",                 desc:"0,4l",        price: "2,70 €" },
+                { name: "Bradáč podľa ponuky",          desc:"0,4l",        price: "3,20 €" },
+                { name: "Maurus 10°",                   desc:"0,4l",        price: "2,10 €" },
+                { name: "Rezané",                       desc:"0,4l",        price: "2,49 €" },
+                { name: "Zlatý bažant radler citrón",   desc:"0,4l",        price: "2,20 €" },
             ]
         },
+
+        flaskovePivo: {
+            title: "Flaškové pivo",
+            items: [
+                { name: "Corona",                       desc:"0,35l",        price: "4,10 €" },
+                { name: "Desperado",                    desc:"0,33l",        price: "2,50 €" },
+                { name: "Zlatý bažant nealko",          desc:"0,33l",        price: "2,20 €" },
+            ]
+        },
+        nealko: {
+            title: "Nealko",
+            items: [
+                { name: "〰️",                                                                                                     price: "ČAPOVANÉ"},
+                { name: "Kofola originál",                              desc:"0,5l",                                            price: "2,40 €" },
+                { name: "Kofola originál",                              desc:"0,3l",                                            price: "1,80 €" },
+                { name: "〰️",                                                                                                     price: "PLECHOVKOVÉ"},
+                { name: "RedBull",                                      desc:"(cukor/ bez cukru) 0,25l",                        price: "2,50 €" },
+                { name: "Vinea",                                        desc:"(biela/ červená) 0,33l",                          price: "2,20 €" },
+                { name: "Kofola",                                       desc:"0,33l",                                           price: "2,20 €" },
+                { name: "Kofola Nulka",                                 desc:"0,33l",                                           price: "2,20 €" },
+                { name: "〰️",                                                                                                     price: "FLAŠKOVÉ"},
+                { name: "Royal Crown cola",                             desc:"(cukor/ bez cukru) 0,25l",                        price: "2,50 €" },
+                { name: "Rajec",                                        desc:"(sýtená/ jemne sýtená/ nesýtená) 0,33l",          price: "1,49 €" },
+                { name: "Džús",                                         desc:"(jahoda/ jablko/ pomaranč) 0,25l",                price: "2,30 €" },
+                { name: "Targa tonic originále",                        desc:"0,25l",                                           price: "2,40 €" },
+                { name: "Targa tonic ginger",                           desc:"0,25l",                                           price: "2,40 €" },
+
+            ]
+        },
+
+        Limonada: {
+            title: "Limonády",
+            items: [
+                { name: "Naša citronáda",                              desc:"0,5l",           price: "4,90 €" },
+                { name: "Broskyňa & bazalka",                          desc:"0,5l",           price: "4,90 €" },
+                { name: "Grapefruit & rozmarín",                       desc:"0,5l",           price: "4,90 €" },
+                { name: "Bazová",                                      desc:"0,5l",           price: "4,90 €" },
+            ]
+        },
+
+        kava: {
+            title: "Káva Trepallini",
+            items: [
+                { name: "Espresso",                                    desc:"10g",                          price: "2,20 €" },
+                { name: "Espresso lugo",                               desc:"10g",                          price: "2,30 €" },
+                { name: "Cappuccino",                                  desc:"10g",                          price: "2,50 €" },
+                { name: "Caffé latte",                                 desc:"(karamel/ vanilka) 0,5l",      price: "2,90 €" },
+                { name: "Ľadová káva so šľahačkou",                    desc:"0,33l",                        price: "2,90 €" },
+                { name: "Mlieko ku káve",                              desc:"0,02l",                        price: "0,20 €" },
+            ]
+        },
+
+        caj: {
+            title: "Čaj",
+            items: [
+                { name: "Čaj",                                         desc:"(čierny/ ovocný/ zelený) 0,3l",            price: "2,50 €" },
+                { name: "Čaj zo zázvoru",                              desc:"0,3l",                                     price: "3,00 €" },
+                { name: "Čaj zo čerstvej mäty",                        desc:"0,3l",                                     price: "3,00 €" },
+                { name: "Med",                                         desc:"20g",                                      price: "0,40 €" },
+            ]
+        },
+
         vinoSekty: {
             title: "Víno & sekty",
             items: [
-                { name: "Rizling Rýnsky (biele, suché) 0,1l / 0,75l", price: "1,50 € / 15,00 €" },
-                { name: "Frankovka Modrá (červené, suché) 0,1l / 0,75l", price: "1,50 € / 15,00 €" },
-                { name: "Frankovka Modrá Rosé (ružové, polosuché) 0,1l", price: "1,50 €" },
-                { name: "Prosecco Brut 0,1l", price: "1,50 €" },
-                { name: "Pesecká Leánka (biele) 0,75l", price: "15,00 €" },
-                { name: "Alibernet (červené, suché) 0,75l", price: "15,00 €" },
-                { name: "Abbazia Cuvée Prestige 0,75l", price: "20,00 €" },
-                { name: "Luc Belaire 0,75l", price: "40,00 €" },
+                { name: "Rizling Rýnsky",               desc:"(biele, suché) 0,1l ",            price: "1,70 €" },
+                { name: "Frankovka Modrá",              desc:"(červené, suché) 0,1l",           price: "1,70 €" },
+                { name: "Frankovka Modrá Rosé",         desc:"(ružové, polosuché 0.1l)",        price: "1,70 €" },
+                { name: "Prosecco Brut",                desc:"0,1l",                            price: "1,70 €" },
+                // ── 0,75l ──────────────────────────────
+                { name: "Rizling Rýnsky",               desc:"(biele, suché) 0,75l ",           price: "15,00 €" },
+                { name: "Pesecká Leánka",               desc:"(biele, polosuché) 0,75l",        price: "15,00 €" },
+                { name: "Alibernet",                    desc:"(červené, suché) 0,75l",          price: "15,00 €" },
+                { name: "Frankovka Modrá",              desc:"(červené, suché) 0,75l",          price: "15,00 €" },
+                { name: "Abbazia Cuvée Prestige",       desc:"0,75l",                           price: "20,00 €" },
+                { name: "Luc Belaire",                  desc:"0,75l",                           price: "40,00 €" },
             ]
         },
         spritze: {
             title: "Spritze",
             items: [
-                { name: "Campari Spritz", price: "5,50 €" },
-                { name: "Aperol Spritz", price: "5,00 €" },
-                { name: "Sarti Spritz", price: "5,50 €" },
-                { name: "Hugo Spritz", price: "5,00 €" },
-                { name: "Bellini Spritz", price: "5,00 €" },
-                { name: "Limoncello Spritz", price: "5,50 €" },
+                { name: "Campari Spritz 0,25l",         desc:"0,06 l Campari , 0,1 l prosecco, pomaranč, soda",                                     price: "5,50 €" },
+                { name: "Aperol Spritz 0,25l",          desc:"0,06 l Aperol spritz, 0,1 l prosecco, pomaranč, soda",                                price: "5,50 €" },
+                { name: "Sarti Spritz 0,25l",           desc:"0,06 l Sarti Rosa , 0,1 l prosecco, limetka, soda",                                   price: "5,50 €" },
+                { name: "Hugo Spritz 0,25l",            desc:"0,06 l Bazový sirup , 0,1 l prosecco, limetka, mäta, soda",                           price: "5,50 €" },
+                { name: "Bellini Spritz 0,25l",         desc:"0,06 l Broskynový sirup , 0,1 l prosecco, limetka, sod",                              price: "5,50 €" },
+                { name: "Limoncello Spritz 0,25l",      desc:"0,06 l Domáce Limoncello 0,02 l citrónový sirup, 0,1 l prosecco, limetka, soda " ,    price: "5,50 €" },
+                { name: "Raspberry Spritz 0,25l",       desc:"0,06l Jelínek Elixír Malina, 0,1 l prosecco, 0,02 l citrónový sirup, soda",           price: "5,50 €" },
             ]
         },
         koktailyMocktaily: {
             title: "Koktaily & Mocktaily",
             items: [
-                { name: "Mojito (Havana Club)", price: "5,50 €" },
-                { name: "Cuba Libre (Havana Club)", price: "5,50 €" },
-                { name: "Gin Tonic / Pink", price: "5,00 €" },
-                { name: "Virgin Mojito", price: "4,50 €" },
-                { name: "Virgin Aperol Spritz", price: "4,50 €" },
-                { name: "Virgin Gin Tonic", price: "4,50 €" },
+                { name: "Mojito 0,25l",                 desc:"0,06 l Havana Club, 0,02 l limetková šťava, 10 g hnedý cukor, limetka, mäta, soda",   price: "5,50 €" },
+                { name: "Cuba Libre 0,25l",             desc:"0,06 l Havana Club, 0,02 l limetková šťava, coca cola",                               price: "5,50 €" },
+                { name: "Gin Tonic 0,25l",              desc:"0,04 l Gin, limetka, tonic",                                                          price: "5,00 €" },
+                { name: "Gin Tonic pink 0,25l",         desc:"0,04 l Gin Pink, limetka, ružový tonic",                                              price: "5,50 €"},
+                { name: "Virgin Mojito 0,25l",          desc:"0,02l limetková šťava, 10g hnedý cukor, imetka, mäta, soda",                          price: "4,50 €" },
+                { name: "Virgin Aperol Spritz 0,25l",   desc:"0,06l Virgin Aperol spritz pomaranč, soda",                                           price: "4,50 €" },
+                { name: "Virgin Gin Tonic 0,25l",       desc:"0,04l Virgin Gin, limetka, tonic",                                                    price: "4,50 €" },
             ]
         },
-        destilatyRumGin: {
-            title: "Rum, Gin, Vodka, Tequila",
+
+        Vodka: {
+            title: "Vodka",
             items: [
-                { name: "Republika Božkov Exclusive 0,04l", price: "2,20 €" },
-                { name: "Havana Club 3r. 0,04l", price: "2,20 €" },
-                { name: "Secreto Mistico Vanilla Cookies 0,04l", price: "3,50 €" },
-                { name: "Diplomatico 12y 0,04l", price: "3,80 €" },
-                { name: "Bumbu 0,04l", price: "3,80 €" },
-                { name: "Beefeater / Pink 0,04l", price: "2,20 €" },
-                { name: "Olmeca Silver / Reposado 0,04l", price: "3,50 €" },
-                { name: "Finlandia / Absolut 0,04l", price: "2,20 €" },
-                { name: "Russian Standard Original 0,04l", price: "2,30 €" },
+                { name: "Finlandia 40%",                        desc:"0,04l",           price: "2,20 €" },
+                { name: "Russian Standard Original 40%",        desc:"0,04l",           price: "2,30 €" },
+                { name: "Absolut 40%",                          desc:"0,04l",           price: "2,20 €" },
             ]
         },
-        likeryDestilaty: {
-            title: "Likéry & Destiláty",
+
+        Gin: {
+            title: "Gin",
             items: [
-                { name: "Jägermeister 0,04l", price: "2,50 €" },
-                { name: "Tatratea (rôzne druhy) 0,04l", price: "2,60 € - 2,80 €" },
-                { name: "Becherovka 0,04l", price: "2,50 €" },
-                { name: "Fernet Stock / Citrus 0,04l", price: "2,20 € / 2,30 €" },
-                { name: "Borovička Spišská 0,04l", price: "2,00 €" },
-                { name: "Hruškovica / Slivovica Jelínek 0,04l", price: "2,50 €" },
-                { name: "Marhuľovica / Čerešňovica Jelínek 0,04l", price: "3,30 € / 5,50 €" },
+                { name: "Beefeater 40%",                        desc:"0,04l",           price: "2,40 €" },
+                { name: "Beefeater pink 37,5%",                 desc:"0,04l",           price: "2,40 €" },
             ]
         },
-        nealkoKavaCaj: {
-            title: "Nealko, Káva & Čaj",
+
+        Destilaty: {
+            title: "Destiláty",
             items: [
-                { name: "Royal Crown Cola 0,25l", price: "2,50 €" },
-                { name: "Rajec (sýtená/nesýtená) 0,33l", price: "1,49 €" },
-                { name: "Džús 0,25l", price: "2,10 €" },
-                { name: "Targa Tonica Originale/Ginger 0,25l", price: "2,40 €" },
-                { name: "Red Bull 0,25l", price: "2,50 €" },
-                { name: "Domáce limonády (citronáda, príchute) 0,5l", price: "4,90 €" },
-                { name: "Káva Trepallini (Espresso, Cappuccino, Latte)", price: "2,20 € - 2,90 €" },
-                { name: "Čaj (čierny, ovocný, zázvor, mäta)", price: "2,50 € - 3,00 €" },
+                { name: "Borovička Spišská 38%",                        desc:"0,04l",           price: "2,00 €" },
+                { name: "Hruškovica jelínek 42%",                       desc:"0,04l",           price: "2,50 €" },
+                { name: "Slivovica jelínek 50%",                        desc:"0,04l",           price: "2,50 €" },
+                { name: "Marhuľovica jelínek 42%",                      desc:"0,04l",           price: "3,30 €" },
+                { name: "Čerešňovica jelínek 42%",                      desc:"0,04l",           price: "5,50 €" },
             ]
-        }
+        },
+
+        Tequila: {
+            title: "Tequila",
+            items: [
+                { name: "Olmeca silver 35%",                            desc:"0,04l",           price: "3,50 €" },
+                { name: "Olmeca reposado 35%",                          desc:"0,04l",           price: "3,50 €" },
+            ]
+        },
+        WhiskyKonak: {
+            title: "Whisky & Koňak",
+            items: [
+                { name: "Tullamore dew 40%",                            desc:"0,04l",           price: "2,70 €" },
+                { name: "Jameson irish 40%",                            desc:"0,04l",           price: "2.90 €" },
+                { name: "Jack daniels 40%",                             desc:"0,04l",           price: "3,50 €" },
+                { name: "Hennessy VS 40%",                              desc:"0,04l",           price: "4,50 €" },
+
+            ]
+        },
+
+        RUM: {
+            title: "Rum",
+            items: [
+                { name: "Republika božkov exclusive 35%",               desc:"0,04l",           price: "2,20 €" },
+                { name: "Havana club 3R. 37,5%",                        desc:"0,04l",           price: "2,20 €" },
+                { name: "Secreto mistico vanilla cookies 40%",          desc:"0,04l",           price: "3,50 €" },
+                { name: "Diplomatico 12Y. 40%",                         desc:"0,04l",           price: "3,80 €" },
+                { name: "Bumbu 40%",                                    desc:"0,04l",           price: "3,80 €" },
+            ]
+        },
+
+        liker: {
+            title: "Likéry",
+            items: [
+                { name: "Jägermeister 35%",                             desc:"0,04l",           price: "2,50 €" },
+                { name: "Tatratea original 52%",                        desc:"0,04l",           price: "2,80 €" },
+                { name: "Tatratea kokos 22%",                           desc:"0,04l",           price: "2,60 €" },
+                { name: "Tatratea ibištek 37%",                         desc:"0,04l",           price: "2,60 €" },
+                { name: "Tatratea broskyňa 42%",                        desc:"0,04l",           price: "2,60 €" },
+                { name: "Tatratea kvetový 47%",                         desc:"0,04l",           price: "2,60 €" },
+                { name: "Tatratea šípka a rakytník 57%",                desc:"0,04l",           price: "2,80 €" },
+                { name: "Tatratea lesné ovocie 62%",                    desc:"0,04l",           price: "2,80 €" },
+                { name: "Becherovka 38%",                               desc:"0,04l",           price: "2,50 €" },
+                { name: "Fernet stock 35%",                             desc:"0,04l",           price: "2,30 €" },
+                { name: "Fernet stock citrus 27%",                      desc:"0,04l",           price: "2,20 €" },
+            ]
+        },
+
     },
 
 // ── DENNÉ MENU ───────────────────────────────────
