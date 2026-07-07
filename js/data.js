@@ -101,15 +101,18 @@ const DB = {
             items: [
                 { name: "Tradičný hovädzí tatarák", desc: "100g mäso, 4 ks hrianok", price: "10,50 €" },
                 { name: "Hovädzí tatarák s hľuzovkou", desc: "100g mäso, 4 ks hrianok", price: "13,50 €" },
+                { name: "Syrovo-šunkový tanier s jahodami a orechmi",desc:"100g", price: "7,50 €" },
+                { name: "Bryndzová nátierka s chlebom",desc:"50g", price: "4,50 €" },
+                { name: "Oškvarková nátierka s chlebom",desc:"50g", price: "4,50 €" },
                 { name: "6 ks cibuľové krúžky", price: "4,90 €" },
             ]
         },
         polievky: {
             title: "Polievky",
             items: [
-                { name: "Domáci slepačí vývar s rezancami", desc: "0,33 l", price: "3,50 €" },
-                { name: "Poctivá kapustnica s klobásou", desc: "0,33 l, chlieb", price: "4,00 €" },
-                { name: "Držková polievka", desc: "0,33 l, chlieb", price: "4,00 €" },
+                { name: "Domáci slepačí vývar s rezancami", desc: "0,33 l", price: "3,90 €" },
+                { name: "Poctivá kapustnica s klobásou", desc: "0,33 l, chlieb", price: "4,50 €" },
+                { name: "Držková polievka", desc: "0,33 l, chlieb", price: "4,50 €" },
                 { name: "Tradičná kulajda", desc: "0,33 l, hubová polievka s vajíčkom a kôprom", price: "4,50 €" },
             ]
         },
@@ -117,7 +120,7 @@ const DB = {
             title: "Hlavné jedlá",
             items: [
                 { name: "Grilovaný kurací steak", desc: "200g", price: "7,90 €" },
-                { name: "Grilovaná bravčová panenka", desc: "200g", price: "9,90 €" },
+                { name: "Grilovaná bravčová panenka", desc: "200g", price: "10,90 €" },
                 { name: "Kurací Gordon Bleu", desc: "200g", price: "11,80 €" },
                 { name: "Kráľovská panvička", desc: "350g, bravčová panenka s omáčkou z lesných húb", price: "14,50 €" },
                 { name: "Cigánska panvička", desc: "350g, kurací steak, volské oko, zemiakové chipsy, demi-glace", price: "12,50 €" },
@@ -129,7 +132,7 @@ const DB = {
         specialityBohem: {
             title: "Špeciality Bohém",
             items: [
-                { name: "Grilované kuracie krídelká s BBQ, chlieb", desc: "4 ks / 8 ks", price: "6,50 € / 11,00 €" },
+                { name: "Grilované kuracie krídelká s BBQ, chlieb", desc: "4 ks / 8 ks", price: "7,50 € / 11,50 €" },
                 { name: "Pečené bravčové rebrá BBQ, horčica, kyslá a pikantná príloha, chlieb", desc: "500g / 1000g", price: "12,50 € / 22,00 €" },
             ]
         },
@@ -147,9 +150,10 @@ const DB = {
             title: "Cestoviny & slovenské jedlá",
             items: [
                 { name: "Penne s kuracím mäsom", desc: "350g, syrová omáčka, kukurica", price: "10,90 €" },
-                { name: "Bryndzové halušky", desc: "350g, so slaninkou a cibuľkou", price: "8,50 €" },
-                { name: "Vyprážaný syr", desc: "200g", price: "7,50 €" },
-                { name: "Gnocchi s paradajkovou omáčkou a syrom", desc: "200g", price: "8,90 €" },
+                { name: "Bryndzové halušky", desc: "350g, so slaninkou a cibuľkou", price: "9,50 €" },
+                { name: "Vyprážaný syr", desc: "200g", price: "8,50 €" },
+                { name: "Gnocchi s paradajkovou omáčkou a syrom", desc: "200g", price: "9,50 €" },
+
             ]
         },
         salaty: {
@@ -171,31 +175,38 @@ const DB = {
                 { name: "Quattro Formaggi", desc: "400g, smotanový základ, 4 druhy syra", price: "9,90 €" },
                 { name: "Salami Pikante", desc: "400g, paradajkový základ, mozzarella, saláma, olivy, jalapeños", price: "9,90 €" },
                 { name: "Hawaii", desc: "400g, paradajkový základ, mozzarella, šunka, ananás", price: "9,90 €" },
+                { name: "Extra prísady",desc:"šunka, syr, slanina, šampiňóny, kukurica", price: "2,00 €" },
                 { name: "Pizza štangle", desc: "260g, cesnakový olej", price: "6,90 €" },
             ]
         },
         prilohy: {
             title: "Prílohy",
             items: [
-                { name: "Hranolky so šupkou", desc: "200g", price: "3,50 €" },
+                { name: "Hranolky", desc: "200g", price: "3,50 €" },
                 { name: "Pečené zemiaky", desc: "200g", price: "3,50 €" },
                 { name: "Ryža", desc: "200g", price: "2,90 €" },
                 { name: "Mix listového šalátu", desc: "200g", price: "3,00 €" },
             ]
         },
-        omacky: {
-            title: "Omáčky & dipy",
+        TepleOmacky: {
+            title: "Teplé omáčky",
             items: [
                 { name: "Demi-glace", desc: "50ml", price: "2,90 €" },
                 { name: "Nivová omáčka", desc: "50ml", price: "2,90 €" },
                 { name: "Syrová omáčka", desc: "30ml", price: "2,90 €" },
-                { name: "Hríbová omáčka", desc: "30ml", price: "2,90 €" },
+                { name: "Hubová omáčka", desc: "30ml", price: "2,90 €" },
+            ]
+        },
+        DomaceDipy: {
+            title: "Domáce dipy",
+            items: [
                 { name: "Slaninová majonéza", desc: "30ml", price: "3,00 €" },
                 { name: "Cheddarová omáčka", desc: "30ml", price: "3,00 €" },
                 { name: "Tatárska omáčka", desc: "50ml", price: "3,00 €" },
                 { name: "Hľuzovková majonéza", desc: "50ml", price: "3,00 €" },
                 { name: "Caesar dressing", desc: "30ml", price: "3,00 €" },
                 { name: "BBQ omáčka", desc: "30ml", price: "3,00 €" },
+                { name: "Kečup", desc: "30ml", price: "2,00 €" },
             ]
         },
         dezerty: {
@@ -209,10 +220,10 @@ const DB = {
         niecoKPivu: {
             title: "Niečo k pivu",
             items: [
-                { name: "Chrumky", price: "1,50 €" },
-                { name: "Arašidy", price: "1,50 €" },
-                { name: "Lay's chipsy", price: "2,50 €" },
-                { name: "Pražené mandle (60g)", price: "3,00 €" },
+                { name: "Chrumky", desc:"60g" ,price: "1,50 €" },
+                { name: "Arašidy", desc:"60g" ,price: "1,50 €" },
+                { name: "Lay's chipsy", desc:"60g" , price: "2,50 €" },
+                { name: "Pražené mandle", desc:"60g" , price: "3,00 €" },
             ]
         }
     },
