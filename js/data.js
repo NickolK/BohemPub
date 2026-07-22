@@ -426,18 +426,18 @@ const DB = {
     denneMenu: {
         note: "Cena denného menu je 7,99 € s polievkou · Pondelok – Piatok 11:00 – 14:00",
         dni: [
-            { day: "Pondelok", soup: "0,33l Cesnaková číra polievka so syrom",          meal: "1: Pečená krkovička, zemiaková kaša, uhorka" },
-            { day: "Utorok",   soup: "0,33l Pórová polievka",                           meal: "1: Paradajková omáčka, mäsové guľky, parená knedľa" },
-            { day: "Streda",   soup: "0,33l Šošovicová polievka",                       meal: "1: Grilované kuracie stehno, ryža, uhorka" },
-            { day: "Štvrtok",  soup: "0,33l Tekvicová polievka",                        meal: "1: Wrap s kuracím mäsom, mix šalát, dressing, hranolky" },
-            { day: "Piatok",   soup: "0,33l Kapustová polievka so zemiakmi",            meal: "1: Kuracie prsia v cestíčku, opekané zemiaky, dressing" },
+            { day: "Pondelok", soup: "0,33l Šošovicová polievka na kyslo",              meal: "1: Kurací Stroganov, ryža" },
+            { day: "Utorok",   soup: "0,33l Hrášková polievka so zeleninou",            meal: "1:Wrap s kuracím mäsom, hranolky" },
+            { day: "Streda",   soup: "0,33l Frankfurtská polievka",                     meal: "1: Moravský vrabec, kyslá kapusta, knedľa" },
+            { day: "Štvrtok",  soup: "0,33l Kapustnica",                                meal: "1: Grilovaná bravčová panenka, nivová omáčka, ryža" },
+            { day: "Piatok",   soup: "0,33l Jarná zeleninová polievka",                 meal: "1: Pečené kuracie stehno, zemiaková kaša, kompót" },
         ],
         menuCelyTyzden: [
-            "2: Gordon Bleu, opekané zemiaky",
-            "3: Grécky šalát s feta syrom",
+            "2: Cézar šalát s kuracími kúskam",
+            "3: Bolonské špagety",
             "4: Furmanské halušky s klobásou a smotanou",
             "5: Vyprážaný syr, hranolky, tatárska omáčka",
-            "Pizza Klobásová - Klobása, syr, olivy"
+            "Pizza Carleone"
         ]
     },
 
