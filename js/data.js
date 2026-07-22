@@ -435,8 +435,7 @@ const DB = {
         menuCelyTyzden: [
             "2: Cézar šalát s kuracími kúskam",
             "3: Bolonské špagety",
-            "4: Furmanské halušky s klobásou a smotanou",
-            "5: Vyprážaný syr, hranolky, tatárska omáčka",
+            "4: Vyprážaný syr, hranolky, tatárska omáčka",
             "Pizza Carleone"
         ]
     },
