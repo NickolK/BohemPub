@@ -66,7 +66,30 @@ const DB = {
             tag:    "Akcia",
             poster: "/images/eventy/KRIDLA.png",
         },
-
+        {
+            id: 5,
+            title:  "Dopraj si viac chuti za menej peňazí",
+            when:   "Podľa otváracích hodín",
+            desc:   "Objednaj si dve pivá a tretie máš od nás ZADARMO!",
+            tag:    "Akcia",
+            poster: "/images/eventy/PivoGratis.png",
+        },
+        {
+            id: 6,
+            title:  "Dopraj si viac chuti za menej peňazí",
+            when:   "Podľa otváracích hodín",
+            desc:   "Objednaj si dve pizze a tretiu máš od nás ZADARMO!",
+            tag:    "Akcia",
+            poster: "/images/eventy/PizzaGratis.png",
+        },
+        {
+            id: 7,
+            title:  "Dopraj si ešte lepší zážitok",
+            when:   "Podľa otváracích hodín",
+            desc:   "Vyber si svoju oblúbenú pizzu a pivo dostaneš od nás zdarma!",
+            tag:    "Akcia",
+            poster: "/images/eventy/KPizziPivoZdarma.png",
+        }
     ],
 
     // ── GALÉRIA ─────────────────────────────────────

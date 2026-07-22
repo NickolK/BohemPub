@@ -186,7 +186,7 @@ function renderIndex() {
     }
     const ep = document.getElementById('eventPreview');
     if (ep) {
-        const posterEvents = DB.events.filter(e => e.poster).slice(0, 5);
+        const posterEvents = DB.events.filter(e => e.poster).slice(0, 7);
         ep.innerHTML = posterEvents.map(ev => `
       <div class="event event-poster">
         <div class="event-img"><img src="${ev.poster}" alt="${ev.title}" loading="lazy"></div>
